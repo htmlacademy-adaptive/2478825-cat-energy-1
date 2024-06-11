@@ -1,31 +1,39 @@
-.nav{
-min-width: 320px;
+.nav {
+  position: relative;
 }
 
 .nav__toggle {
-
+  position: absolute;
+  right: 20px;
+  top: -45px;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-image: url("../img/mobile-menu.svg");
+  cursor: pointer;
+  border: none;
 }
 
 .nav__list {
-    margin: 0;
-    padding-left: 170px;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #e6e6e6;
+   display: none;
 }
 
-
 .nav__item {
-    
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .nav__link {
-    color: #000000;
-    text-transform: uppercase;
-    font-family: "Oswald Regular";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 20px;
-    text-decoration: none;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-decoration: none;
+  display: block;
+  padding: 23px 10px 22px;
 }

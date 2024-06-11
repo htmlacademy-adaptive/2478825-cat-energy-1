@@ -1,41 +1,54 @@
 .welcome {
-    width: 320px;
-    height: 302px;
-    font-family: "Oswald Regular";
-    font-weight: 400;
-    color: #ffffff;
-    background-image: url("../../img/welcome.png");
-    background-color: rgba(104, 183, 56, 0.851);
-    background-blend-mode: overlay;
-    background-size: cover;
+  font-weight: 400;
+  color: #ffffff;
 }
 
+.welcome-container {
+  background-image: url("../img/welcome.png");
+  background-image: url("../img/welcome-background.svg");
+  background-size: cover;
+}
 .welcome__title {
-    .mixin();
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 36px;
-    text-align: center;
+  .mixin();
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  padding: 27px 0 0 0;
 }
 
 .welcome__slogan {
-    .mixin();
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
+  .mixin();
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 25px 0 164px 0;
 }
 
-.welcome__program-selection {
-    display: block;
+ .welcome__image {
     width: 280px;
-    height: 40px;
-    border: none;
-    background-color: #68b738;
-    color: #ffffff;
-    font-family: "Oswald Regular";
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
+    height: 270px;
+    position: absolute;
+    bottom: 147px;
+    left: 20px;
+    background-image: url("../img/main-img.jpg");
+}
 
+
+
+.welcome__program-selection {
+  display: block;
+  width: 280px;
+  height: 40px;
+  border: none;
+  background-color: #68b738;
+  color: #ffffff;
+  font-family: "Oswald Regular";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 138px;
+  margin-left: 20px
 }
