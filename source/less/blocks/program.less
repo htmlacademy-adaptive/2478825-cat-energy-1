@@ -9,12 +9,8 @@
 
 .program__item {
   .mixin();
-  min-width: 280px;
-  min-height: 266px;
   background-color: #f2f2f2;
-  padding: 0px 20px 0 20px;
   margin: 20px 0;
-
 }
 
 .program__title {
@@ -23,40 +19,35 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 28px;
+  padding-left: 90px;
+  background-repeat: no-repeat;
 }
 
 .program__title--slimming {
   background-image: url("../../img/cat-back.svg");
-  background-repeat: no-repeat;
   background-position-y: 21px;
+  background-position-x: 20px;
 }
 
 .program__title--gain {
   background-image: url("../../img/cat-back2.svg");
-  background-repeat: no-repeat;
-  background-position-y: 21px;
+  background-position-y: 24px;
+  background-position-x: 12px;
 }
 
 .program__desc {
   .mixin();
-  font-family: "Lato";
+  font-family: @lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   color: #444444;
   position: relative;
-  padding-bottom: 39px;
-}
-
-.program__desc::before {
-  content: "";
-  position: absolute;
-  top: 113px;
-  min-width: 240px;
-  border: 1px solid #d9d9d9
+  padding: 0 0 23px;
+  margin: 0 20px;
+  border-bottom: 1px solid #d9d9d9
 }
 
 .program__search {
@@ -66,8 +57,19 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  padding-right: 50px;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  background-position: 100px;
-}
+  background-position: 119px;
+  padding: 19px 50px 22px 20px;
+  display: block;
+  position: relative;
+
+//   &::before {
+//     content: "";
+//     background-image: url("../img/arrow.svg");
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     top: 0;
+//     left: 10px;
+//   }
+ }
