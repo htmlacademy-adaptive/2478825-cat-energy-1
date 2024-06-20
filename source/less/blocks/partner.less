@@ -1,6 +1,24 @@
 .partner {
   margin: 26px 20px;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    .mixin();
+    background: #ffffff;
+    padding: 61px 70px;
+    width: 628px;
+    column-gap: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 6;
+    width: 404px;
+    padding: 61px 80px 61px 80px;
+    column-gap: 0;
+  }
 }
 
 .partner__title {
@@ -9,6 +27,12 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  color: #111111;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
 }
 
@@ -20,6 +44,9 @@
   font-weight: 400;
   line-height: 20px;
   color: #444444;
-}
 
-.partner__map {}
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+}

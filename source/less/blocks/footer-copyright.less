@@ -1,11 +1,19 @@
 .footer__copyright {
   padding: 20px 20px 47px;
+
+  @media (min-width: @tablet-width) {
+    .mixin();
+  }
 }
 
 .copyright__wrapper {
   display: flex;
   justify-content: space-between;
   max-width: 500px;
+
+  @media (min-width: @tablet-width) {
+    width: 162px;
+  }
 }
 .copyright__text {
   font-family: @lato;
@@ -14,6 +22,11 @@
   line-height: 20px;
   color: #444444;
   padding-top: 7px;
+
+  @media (min-width: @tablet-width) {
+    .mixin();
+    padding-top: 7px;
+  }
 }
 
 .copyright__link {

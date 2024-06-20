@@ -1,6 +1,12 @@
 .social {
     margin: 0 20px;
     border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: @tablet-width) {
+        margin: 0;
+        border: none;
+        padding-top: 8px;
+    }
 }
 
 .social__list {
@@ -10,15 +16,19 @@
     justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 25px;
-    padding: 22px 75px 18px;
+    padding: 22px 71px 18px;
     max-width: 400px;
-}
 
-.social__item {}
+    @media (min-width: @tablet-width) {
+        .mixin();
+        width: 132px;
+        column-gap: 0;
+        margin-left: 40px;
+    }
+}
 
 .social__link {
     display: block;
     width: 28px;
     height: 22px;
 }
-

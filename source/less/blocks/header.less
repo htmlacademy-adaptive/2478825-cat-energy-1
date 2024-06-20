@@ -2,29 +2,40 @@
   position: relative;
   padding: 65px 0 0;
   background: url("../img/logo-part.svg") no-repeat center 23px;
+  z-index: 12;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    background: none;
+  }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .header__logo {
   position: absolute;
   top: 13px;
   left: 17px;
+
+  @media (min-width: @tablet-width) {
+    top: 25px;
+    left: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 55px;
+    left: 110px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .header {
-    position: relative;
-    padding: 0;
-    background: none;
-  }
-
   .header__wrapper {
     display: flex;
     justify-content: flex-end;
   }
-
-  .header__logo {
-    position: absolute;
-    top: 25px;
-    left: 30px;
-  }
 }
+
+ 
+  

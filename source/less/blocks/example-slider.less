@@ -1,5 +1,17 @@
-.example-slider {
+.example__slider {
   width: 280px;
-  height: 256px;
+  min-height: 256px;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    .mixin();
+    width: 768px;
+    min-height: 463px;
+    background-color: #eaeaea;
+
+    @media (min-width: @desktop-width) {
+      width: 0;
+      height: 0;
+    }
+  }
 }
