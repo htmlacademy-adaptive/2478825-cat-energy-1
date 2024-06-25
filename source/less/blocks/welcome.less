@@ -35,10 +35,11 @@
     &::after {
       content: "";
       position: absolute;
-      width: 720px;
+      width: 50%;
       height: 694px;
       background: url("../img/welcome-cat-desktop.jpg") no-repeat 0 0;
       top: -101px;
+      left: 50%;
       right: 0;
     }
 
@@ -74,15 +75,15 @@
     position: relative;
     
 
-    &::before {
-      content: "";
-      background: url("../img/welcome-background-desktop.svg") repeat 0 0;
-      width: 720px;
-      height: 694px;
-      position: absolute;
-      top: -101px;
-      left: 1080px;
-    }
+    // &::before {
+    //   content: "";
+    //   background: url("../img/welcome-background-desktop.svg") repeat 0 0;
+    //   width: 720px;
+    //   height: 694px;
+    //   position: absolute;
+    //   top: -101px;
+    //   left: 1080px;
+    // }
 
     // &::after {
     //   content: "";
@@ -126,7 +127,17 @@
 
   @media (min-width: @desktop-width) {
     .mixin();
-    width: 720px;
+    width: 100%;
+
+    &::before {
+      background: url("../img/welcome-background-desktop.svg") repeat 0 0;
+      left: 50%;
+      width: 50%;
+      min-height: 695px;
+      top: -101px;
+      left: 50%;
+      z-index: 1;
+    }
   }
 }
 
@@ -136,6 +147,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
+  width: 275px;
   padding: 27px 20px 0;
   position: relative;
   z-index: 5;
@@ -145,6 +157,7 @@
     line-height: 60px;
     text-align: left;
     margin-bottom: 16px;
+    width: 450px;
   }
 
   @media (min-width: @desktop-width) {
@@ -191,7 +204,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  margin: 3px 20px 0;
+  margin: 3px 18px 0;
   padding: 10px 10px;
 
   @media (min-width: @tablet-width) {

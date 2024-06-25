@@ -3,26 +3,24 @@
   display: flex;
 
   @media (min-width: @tablet-width) {
-    .mixin();
+    margin: 0 auto;
     background: #ffffff;
     padding: 61px 70px;
-    width: 628px;
-    column-gap: 250px;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   @media (min-width: @desktop-width) {
-    position: absolute;
-    top: 95px;
-    left: 110px;
     z-index: 6;
-    width: 404px;
+    position: sticky;
+    width: 408px;
+    margin-left: 109px;
     padding: 61px 80px 61px 80px;
-    column-gap: 0;
   }
 }
 
 .partner__title {
-  width: 400px;
+  width: 136px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -32,21 +30,31 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    width: 163px;
   }
 
 }
 
 .partner__adress {
   margin: 0;
-  width: 400px;
+  width: 140px;
   font-family: @lato;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   color: #444444;
 
+
   @media (min-width: @tablet-width) {
+    width: 157px;
     font-size: 16px;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
   }
 }

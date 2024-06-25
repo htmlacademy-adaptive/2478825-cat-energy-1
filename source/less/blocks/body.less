@@ -1,4 +1,15 @@
 .body {
   margin: 0;
   font-family: @oswald;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: #63a73c;
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    top: -270px;
+    right: 0;
+  }
 }

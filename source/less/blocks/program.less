@@ -7,8 +7,10 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 110px;
-    margin-bottom: 27px;
+    padding: 0;
+    padding-bottom: 27px;
+    width: 1221px;
+    margin: 0 auto;
   }
 }
 
@@ -18,7 +20,7 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1220px;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
   }
@@ -152,17 +154,37 @@
     position: absolute;
     top: 22px;
     left: calc(100% - 33px);
-    background: url("../img/icon_arrow.svg") no-repeat;
+    background: url("../img/icon-arrow.svg") no-repeat right 0 top 0;
   }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 29px;
     padding: 53px 0 57px;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 12px;
+      position: absolute;
+      top: 61px;
+      left: calc(100% + 25px);
+      background: url("../img/icon-arrow.svg") no-repeat right 0 top 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
     padding: 29px 53px 57px;
+
+    &::before {
+      content: "";
+      width: 24px;
+      height: 12px;
+      position: absolute;
+      top: 36px;
+      left: calc(100% - 28px);
+      background: url("../img/icon-arrow.svg") no-repeat right 0 top 0;
+    }
   }
 }
 
@@ -188,24 +210,37 @@
     top: 22px;
     left: calc(100% - 33px);
     background: url("../img/icon-arrow.svg") no-repeat;
+    transition: all 0.5s;
   }
 
   @media (min-width: @tablet-width) {
-    .program__search:hover {
+    
       font-size: 20px;
       line-height: 29px;
-      padding: 0;
+      padding: 53px 0 57px;
 
       &::before {
         content: "";
-        width: 36px;
+        width: 38px;
         height: 12px;
         position: absolute;
-        top: 22px;
-        left: calc(100% - 33px);
-        background: none;
-        // background: url("../img/icon-arrow.svg") no-repeat;
+        top: 61px;
+        left: calc(100% + 25px);
+        background: url("../img/icon-arrow.svg") no-repeat;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 29px 53px 57px;
+
+      &::before {
+        content: "";
+        width: 32px;
+        height: 12px;
+        position: absolute;
+        top: 36px;
+        left: calc(100% - 28px);
+        background: url("../img/icon-arrow.svg") no-repeat;
       }
     }
   }
-}
