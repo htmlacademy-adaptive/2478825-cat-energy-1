@@ -1,5 +1,14 @@
 .nav {
   position: relative;
+  z-index: 3;
+
+  @media (min-width: @tablet-width) {
+    margin: 16px 34px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    .mixin();
+  }
 }
 
 .nav__toggle {
@@ -12,6 +21,16 @@
   background-image: url("../img/mobile-menu.svg");
   cursor: pointer;
   border: none;
+  display: none;
+}
+
+.nav--closed .nav__toggle {
+  display: block;
+}
+
+.nav--opened .nav__toggle {
+  display: block;
+  background: url("../img/mobile-menu.svg");
 }
 
 .nav__list {
@@ -19,11 +38,68 @@
   padding: 0;
   list-style: none;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    width: 436px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 475px;
+    padding-top: 70px;
+  }
+}
+
+.nav--closed .nav__list {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.nav--opened .nav__list {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
 }
 
 .nav__item {
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {}
+}
+
+.nav__item--active {
+  @media (min-width: @tablet-width) {
+    position: relative;
+
+    &::before {
+      content: "";
+      border-bottom: 2px solid #68b738;
+      position: absolute;
+      bottom: 13px;
+      left: 0;
+      width: 100%;
+    }
+
+    @media (min-width: @desktop-width) {
+      &::before {
+        border-bottom: 2px solid #ffffff;
+        bottom: -9px;
+      }
+    }
+  }
 }
 
 .nav__link {
@@ -36,30 +112,23 @@
   text-decoration: none;
   display: block;
   padding: 23px 10px 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 23px 0 22px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: #ffffff;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+
+  }
 }
 
-@media (min-width: @tablet-width) {
-  .nav {
-    margin:16px 25px 0 0;
-  }
-
-  .nav__list {
-    width: 455px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border: none;
-  }
-
-  .nav__item {
-    border-bottom: none;
-  }
-
-  .nav__link {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    
-  }
-  
+.nav__link--form {
+  color: #000000;
 }

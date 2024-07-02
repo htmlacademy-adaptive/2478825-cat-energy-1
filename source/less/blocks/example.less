@@ -1,6 +1,18 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px;
+  padding: 25px 20px 20px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    padding: 46px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 23px 0px 20px;
+    margin: 0 auto 48px;
+    width: 1220px;
+  }
+
 }
 
 .example__title {
@@ -9,6 +21,19 @@
   font-weight: 400;
   line-height: 40px;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 59px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 ;
+    margin-bottom: 146px;
+    width: 1200px;
+  }
 }
 
 .example__search {
@@ -19,50 +44,60 @@
   line-height: 18px;
   color: #444444;
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 56px;
+    padding: 0 19px 0 30px;
+    
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 433px;
+    margin-bottom: 70px;
+  }
 }
 
-.example__list {
-  .mixin();
-  display: flex;
-  margin-bottom: 33px;
-  column-gap: 30px;
-}
-
-.example__item {
-  border: 1px solid #cdcdcd;
-  border-radius: 4px;
-  height: 56px;
-}
-
-.example__number {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  text-transform: uppercase;
-  padding: 14px 14px 7px;
-  text-align: center;
-}
-
-.example__description {
-  .mixin();
-  color: #444444;
-  font-family: @lato;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  width: 77px;
-  text-align: center;
-  margin: 0 18px;
-  padding: 0 5px;
-  background-color: #eaeaea;
-}
-
-.example__result {
+.example__cost {
   .mixin();
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 20px;
+  margin: 0 auto 20px;
 
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 180px;
+    text-align: right;
+    padding-top: 5px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 550px;
+    text-align: left;
+    padding-top: 50px;
+  }
+}
+
+.example__container {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 251px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    display: block;
+    width: 550px;
+    
+  }
 }
