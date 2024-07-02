@@ -1,0 +1,46 @@
+.programm-group {
+  padding-bottom: 2px;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding-bottom: 2px;
+  }
+
+}
+
+.programm-group__list {
+  padding-top: 25px;
+  margin: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 28px 27px 30px 26px;
+    margin: 0 70px;
+    border: 1px solid #e7e7e7;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    
+  }
+}
+
+.programm-group__item {
+  margin-bottom: 19px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+
+  }
+}
+
+.programm-group__item:not(:last-child) {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
+}
