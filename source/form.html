@@ -80,10 +80,10 @@
         </fieldset>
       </div>
       <fieldset class="form__group contact-group">
-        <legend class="form__title special-title">
+        <legend class="form__title contact-group__title special-title">
           <span class="special-title__wrapper">
             <span class="special-title__text"> 
-              Контактные данные (владельца кота)
+              <div class="contact-group__title--altered"> Контактные данные (владельца кота)</div>
             </span>
           </span>
         </legend>
@@ -110,11 +110,25 @@
         </ul>
       </fieldset>
       <fieldset class="form__group comment">
-        <legend class="form__title comment__title">Комментарий</legend>
+        <legend class="form__title comment__title special-title">
+          <span class="special-title__wrapper">
+            <span class="special-title__text"> 
+              Комментарий
+            </span>
+          </span>
+        </legend>
+        <div class="comment__wrapper">
         <textarea class="comment__textarea text-input__input">Расскажите обо всех повадках кота</textarea>
+      </div>
       </fieldset>
       <fieldset class="form__group extra-group">
-        <legend class="form__title extra-group__title">Дополнительно</legend>
+        <legend class="form__title extra-group__title special-title">
+          <span class="special-title__wrapper">
+            <span class="special-title__text"> 
+              Дополнительно
+            </span>
+          </span>
+        </legend>
         <ul class="form__list extra-group__list">
           <li class="extra-group__item checkbox-input">
             <input type="checkbox" class="checkbox-input__input visually-hidden" id="sweetener" name="ingredients"

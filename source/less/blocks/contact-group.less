@@ -1,15 +1,32 @@
+.contact-group {}
 
+.contact-group__title {
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+  }
+
+}
+
+.contact-group__title--altered {
+  max-width: 186px;
+
+  @media (min-width: @tablet-width) {
+    max-width: 100%;
+  }
+}
 
 .contact-group__list {
   margin: 0 20px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: @tablet-width) {
     margin: 0 70px 65px;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     display: flex;
     justify-content: space-between;
     width: 1220px;
@@ -23,10 +40,9 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 21px;
-}
+  }
 
   @media (min-width: @desktop-width) {
     width: 570px;
   }
 }
-

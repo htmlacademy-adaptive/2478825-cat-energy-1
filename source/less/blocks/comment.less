@@ -1,14 +1,6 @@
 .comment {
   position: relative;
 
-  &::after {
-    content: "";
-    width: 100%;
-    position: absolute;
-    top: -49px;
-    left: 0;
-    border-top: 2px solid #68b738;
-    z-index: 2;
   }
   @media (min-width: @tablet-width) {
     &::after {
@@ -25,20 +17,27 @@
     }
   }
 
-}
+
 
   .comment__title {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
     background: #ffffff;
     position: relative;
     z-index: 4;
 
     @media (min-width: @tablet-width) {
-      margin-bottom: 87px;
+      margin-bottom: 84px;
     }
 
     @media (min-width: @desktop-width) {
-      margin: 0 70px 78px;
+      margin-bottom: 75px;
+    }
+  }
+
+  .comment__wrapper {
+    @media (min-width: @desktop-width) {
+      width: 1220px;
+      margin: 0 auto 68px;
     }
   }
 
@@ -60,6 +59,7 @@
 
     @media (min-width: @desktop-width) {
       width: 1220px;
-      margin: 0 108px 66px;
+      margin: 0;
+      padding: 10px 20px;
     }
   }
