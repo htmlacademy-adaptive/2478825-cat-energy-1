@@ -11,30 +11,30 @@
 
 <body class="body">
   <header class="header">
-    
-      <a class="header__logo logo">
-        <picture>
-          <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" hieght="59">
-          <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" hieght="50">
-          <img class="logo__img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
-        </picture>
-      </a>
-      <nav class="nav">
-        <button class="nav__toggle" type="button">
-          <span class="visually-hidden">Показать меню</span>
-        </button>
-        <ul class="nav__list">
-          <li class="nav__item nav__item--active">
-            <a class="nav__link" href="#">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
+
+    <a class="header__logo logo">
+      <picture>
+        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202" hieght="59">
+        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174" hieght="50">
+        <img class="logo__img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+      </picture>
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Показать меню</span>
+      </button>
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active">
+          <a class="nav__link" href="#">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="main">
     <section class="welcome">
@@ -91,44 +91,57 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__wrapper">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__search">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в
-        день. </p>
-      <div class="example__container">
-        <div class="example__result result">
-          <dl class="result__item">
-            <dt class="result__number">5 кг</dt>
-            <dd class="result__description">снижение веса</dd>
-          </dl>
-          <dl class="result__item">
-            <dt class="result__number">60 дней</dt>
-            <dd class="result__description">затрачено времени</dd>
-          </dl>
+      <h2 class="example__title">
+        <div class="example__title-wrapper">Живой пример</div>
+      </h2>
+      <div class="example__wrap">
+        <div class="example__wrapper">
+          <p class="example__search">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в
+            день. </p>
+          <div class="example__container">
+            <div class="example__result result">
+              <dl class="result__item">
+                <dt class="result__number">5 кг</dt>
+                <dd class="result__description">снижение веса</dd>
+              </dl>
+              <dl class="result__item">
+                <dt class="result__number">60 дней</dt>
+                <dd class="result__description">затрачено времени</dd>
+              </dl>
+            </div>
+            <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+          </div>
         </div>
-        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
-      </div>
-    </div>
-      <div class="example__slider slider">
-<ul class="slider__list">
-  <li class="slider__screen slider__screen--before">
-    <picture>
-      <source media="(min-width: 768px)" srcset="./img/before-t.png 1x, ./img/before-t@2x.png 2x">
-      <img src="./img/before.png" alt="Кот до похудения" class="slider__image">
-    </picture>
-  </li>
-  <li class="slider__screen">
-    <picture>
-      <source media="(min-width: 768px)" srcset="./img/after-t.png 1x, ./img/after-t@2x.png 2x">
-      <img src="./img/after.png" alt="Кот после похудения" class="slider__image">
-    </picture>
-  </li>
-</ul>
-<button class="slider__handle" type="button">
-  <span class="visually-hidden">Показать состояния пациента до и после похудения</span>
-</button>
+        <div class="example__slider-container">
+          <div class="example__slider slider">
+            <ul class="slider__list">
+              <li class="slider__screen slider__screen--before">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/before-t.png 1x, ./img/before-t@2x.png 2x">
+                  <img src="./img/before.png" alt="Кот до похудения" class="slider__image">
+                </picture>
+              </li>
+              <li class="slider__screen">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./img/after-t.png 1x, ./img/after-t@2x.png 2x">
+                  <img src="./img/after.png" alt="Кот после похудения" class="slider__image">
+                </picture>
+              </li>
+            </ul>
+            <button class="slider__handle" type="button">
+              <span class="visually-hidden">Показать состояния пациента до и после похудения</span>
+              <svg class="slider__arrow" width="24" height="18" viewBox="0 0 24 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 0L0 9L8 18V0Z" fill="#666666" />
+                <path d="M24 9L16 0V18L24 9Z" fill="#666666" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -147,7 +160,7 @@
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <picture>
-          <img class="footer__map" src="./img/map.jpg" alt="Карта" width="320px" height="362px">
+          <img class="footer__map" src="./img/map.jpg" alt="Карта" width="320" height="362">
         </picture>
       </div>
     </div>

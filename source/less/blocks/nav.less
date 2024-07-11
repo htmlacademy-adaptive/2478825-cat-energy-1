@@ -42,7 +42,8 @@
   @media (min-width: @tablet-width) {
     width: 436px;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
+    column-gap: 32px;
     flex-wrap: wrap;
     border: none;
   }
@@ -131,4 +132,13 @@
 
 .nav__link--form {
   color: #000000;
+}
+
+.nav__item--active-form {
+  @media (min-width: @desktop-width) {
+    &::before {
+      border-bottom: 2px solid #000000;
+      bottom: -9px;
+    }
+  }
 }

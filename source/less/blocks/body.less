@@ -2,17 +2,29 @@
   margin: 0;
   font-family: @oswald;
 
-  // @media (min-width: @desktop-width) {
-  //   position: relative;
+  @media (min-width: @desktop-width) {
+    position: relative;
 
-  //   &::after {
-  //     content: "";
-  //     background: #62a63b;
-  //     width: 50%;
-  //     height: 300px;
-  //     position: absolute;
-  //     top: -300px;
-  //     right: 0;
-  //   }
-  // }
+    &::after {
+      content: "";
+      background: #504f55;
+      width: 50%;
+      height: 300px;
+      position: absolute;
+      top: -300px;
+      right: 0;
+    }
+
+    &::before {
+      content: "";
+      // background:  rgba(104, 183, 56, 0.851);
+      background: url("../img/welcome-background.svg") repeat;
+      width: 50%;
+      height: 300px;
+      position: absolute;
+      top: -300px;
+      right: 0;
+      z-index: 10;
+    }
+  }
 }

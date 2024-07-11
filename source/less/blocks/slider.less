@@ -1,111 +1,151 @@
 .slider {
-    width: 280px;
-    height: 256px;
-    margin: 0 auto;
-    position: relative;
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  position: relative;
 
-    @media (min-width: @tablet-width) {
-        width: 560px;
-        height: 512px;
-
-    }
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 280px;
-    height: 256px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 280px;
+  height: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    @media (min-width: @tablet-width) {
-        width: 560px;
-        height: 512px;
-    }
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__screen {
-    width: 280px;
-    height: 256px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #eaeaea;
-    overflow: hidden;
+  width: 280px;
+  height: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #eaeaea;
+  overflow: hidden;
 
-    @media (min-width: @tablet-width) {
-        width: 560px;
-        height: 512px;
-        background-color: #ffffff;
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+    background-color: #eaeaea;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 151px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #ffffff;
+      z-index: -1;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+
+    &::after {
+      height: 135px;
+    }
+  }
 }
 
 .slider__screen--before {
-    width: 50%;
-    z-index: 5;
-    transition: width 1s ease;
-    background-color: #eaeaea;
+  width: 50%;
+  z-index: 5;
+  transition: width 1s ease;
+  background-color: #eaeaea;
 
-    @media (min-width: @tablet-width) {
-        background-color: #ffffff;
-    }
+  @media (min-width: @tablet-width) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .slider--before .slider__screen--before {
-    width: 100%;
+  width: 100%;
 }
 
 .slider--after .slider__screen--before {
-    width: 0;
+  width: 0;
 }
 
 .slider__image {}
 
 .slider__handle {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #666666;
-    background-image: url("../img/slider-arrow.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #666666;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: left 1s ease;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: #666666;
+    display: block;
+    z-index: 6;
+    position: absolute;
+    top: -109px;
+    left: 17px;
+  }
+
+  &::after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
     border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    transition: left 1s ease;
-    position: relative;
+    z-index: 8;
+  }
 
+  @media (min-width: @tablet-width) {
     &::before {
-        content: "";
-        width: 4px;
-        height: 256px;
-        border-radius: 2px;
-        background-color: #666666;
-        display: block;
-        z-index: 6;
-        position: absolute;
-        top: -109px;
-        left: 17px;
+      height: 512px;
+      top: -238px;
     }
+  }
+}
 
-    @media (min-width: @tablet-width) {
-        &::before {
-            height: 512px;
-            top: -238px;
-        }
-    }
+.slider__arrow {
+  z-index: 10;
+  position: absolute;
+  top: 9px;
+  left: 7px;
 }
 
 .slider--before .slider__handle {
-    left: 100%;
+  left: 100%;
 }
 
 .slider--after .slider__handle {
-    left: 0;
+  left: 0;
 }

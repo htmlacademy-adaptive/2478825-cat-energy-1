@@ -1,16 +1,44 @@
 .products {
-  padding: 0 20px 25px;
+  padding: 0 20px 24px;
   border-bottom: 1px solid #ebebeb;
+
 }
+
+
+@media (min-width: @tablet-width) {
+  width: 324px;
+  height: 429px;
+}
+
 
 .products__title {
   margin: 0;
-  padding: 78px 38px 8px;
+  padding: 79px 38px 9px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 30px;
+    border: 1px solid #d3d3d3;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+  }
+
+  &::before {
+    content: "";
+    width: 30px;
+    border: 1px solid #d3d3d3;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+  }
 }
 
 .products__text {

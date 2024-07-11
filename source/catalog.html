@@ -42,7 +42,10 @@
     <ul class="catalog__list">
       <li class="catalog__item card">
         <div class="catalog__wrapper">
+          <picture>
+          <source srcset="./img/card-tablet-1.png" media="(min-width: 768px)" width="200" hieght="110">
           <img src="./img/card-1.png" alt="" class="card__image" width="140" height="107">
+        </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy PRO 500 г</h2>
@@ -65,7 +68,10 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__wrapper">
-          <img class="card__image" src="./img/card-2.png" alt="" width="140" height="107">
+          <picture>
+            <source srcset="./img/card-tablet-2.png" media="(min-width: 768px)" width="200" hieght="110">
+            <img src="./img/card-2.png" alt="" class="card__image" width="140" height="107">
+          </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy PRO 1000 г</h2>
@@ -88,8 +94,10 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__wrapper">
-
-          <img class="card__image" src="./img/card-3.png" alt="" width="140" height="107">
+          <picture>
+            <source srcset="./img/card-tablet-3.png" media="(min-width: 768px)" width="200" hieght="110">
+            <img src="./img/card-3.png" alt="" class="card__image" width="140" height="107">
+          </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy PRO 500 г</h2>
@@ -112,8 +120,10 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__wrapper">
-
-          <img class="card__image" src="./img/card-4.png" alt="" width="140" height="107">
+          <picture>
+            <source srcset="./img/card-tablet-4.png" media="(min-width: 768px)" width="200" hieght="110">
+            <img src="./img/card-4.png" alt="" class="card__image" width="140" height="107">
+          </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy PRO 1000 г</h2>
@@ -136,8 +146,10 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__wrapper">
-
-          <img class="card__image" src="./img/card-5.png" alt="" width="140" height="107">
+          <picture>
+            <source srcset="./img/card-tablet-5.png" media="(min-width: 768px)" width="200" hieght="110">
+            <img src="./img/card-5.png" alt="" class="card__image" width="140" height="107">
+          </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy SLIM 500 г</h2>
@@ -160,8 +172,10 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__wrapper">
-
-          <img class="card__image" src="./img/card-6.png" alt="" width="140" height="107">
+          <picture>
+            <source srcset="./img/card-tablet-6.png" media="(min-width: 768px)" width="200" hieght="110">
+            <img src="./img/card-6.png" alt="" class="card__image" width="140" height="107">
+          </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy SLIM 1000 г</h2>
@@ -184,8 +198,10 @@
       </li>
       <li class="catalog__item">
         <div class="catalog__wrapper">
-
-          <img class="card__image" src="./img/card-7.png" alt="" width="140" height="107">
+          <picture>
+            <source srcset="./img/card-tablet-7.png" media="(min-width: 768px)" width="200" hieght="110">
+            <img src="./img/card-7.png" alt="" class="card__image" width="140" height="107">
+          </picture>
           <div class="card__wrapper">
             <a href="" class="card__link">
               <h2 class="card__title">Cat Energy SLIM 500 г</h2>
@@ -256,10 +272,16 @@
       </li>
     </ul>
   </section>
+  <section class="gift">
+    <div class="gift__wrapper">
+    <h2 class="visually-hidden">Подарки</h2>
+    <p class="gift__text">Закажите все<br> и получите чехол для кота в подарок!</p>
+  </div>
+  </section>
   </main>
   <footer class="footer">
     <div class="footer__container">
-      <div class="footer__partner partner">
+      <div class="footer__partner partner partner--catalog">
         <b class="partner__title">Приглашаем <br> к сотрудничеству дилеров!</b>
         <div class="partner__adress">
           <div>ул. Большая Конюшенная, д. 19/8</div>
@@ -272,7 +294,7 @@
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <picture>
-          <img class="footer__map" src="./img/map.jpg" alt="Карта" width="320px" height="362px">
+          <img class="footer__map" src="./img/map.jpg" alt="Карта" width="320" height="362">
         </picture>
       </div>
     </div>
