@@ -13,6 +13,10 @@
     position: relative;
     z-index: 5;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 10px 0 8px;
+  }
 }
 
 .card__wrapper {
@@ -29,7 +33,7 @@
   text-transform: uppercase;
   cursor: pointer;
   width: 76px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -39,6 +43,10 @@
     width: 130px;
     margin: 0;
     padding: 0 59px 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 19px 18px;
   }
 }
 
@@ -62,6 +70,11 @@
     border-bottom: 1px solid #cdcdcd;
     padding: 8px 0 4px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    padding: 7px 0 4px;
+  }
 }
 
 .card__description-name {
@@ -82,6 +95,9 @@
     line-height: 20px;
     text-align: center;
     padding: 10px;
+  }
 
+  @media (min-width: @desktop-width) {
+    width: 169px;
   }
 }

@@ -4,18 +4,42 @@
 
 .addition__header {
   padding-bottom: 29px;
-  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .addition__list {
   padding: 0 20px;
   margin: 0;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
 }
 
 .addition__item {
   padding-top: 13px;
   border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    padding: 26px 38px 28px;
+  }
+}
+
+.addition__item:first-child {
+  border-top: 1px solid #cdcdcd;
+}
+
+.addition__wrapper {
+  
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
 }
 
 .addition__title {
@@ -27,14 +51,23 @@
   color: #222222;
   text-transform: uppercase;
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
 }
 
 .addition__goods {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content:right;
+  column-gap: 50px;
   margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {}
 }
 
 .addition__name {
@@ -43,6 +76,12 @@
   font-weight: 400;
   line-height: 14px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 4px;
+  }
 }
 
 .addition__prise {
@@ -50,8 +89,32 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding-top: 2px;
+    padding-right: 3px;
+  }
 }
 
 .addition__button {
   margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    padding: 10px 14px;
+    margin: 0;
+  }
+}
+
+.addition__container {
+  @media (min-width: @tablet-width) {
+    border: 1px solid #cdcdcd;
+    margin: 0 30px;
+  }
 }

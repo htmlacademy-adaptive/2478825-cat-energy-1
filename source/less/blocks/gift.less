@@ -1,5 +1,9 @@
 .gift {
-  margin: 34px 20px 36px;
+  margin: 35px 20px 36px;
+
+  @media (min-width: @tablet-width) {
+    margin: 70px 31px 74px;
+  }
 }
 
 .gift__wrapper {
@@ -10,7 +14,7 @@
 
   &::before {
     content: "";
-    background: url(../../img/gift-background.svg) repeat;
+    background: url(../img/gift-background.svg) repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -20,13 +24,27 @@
 
   &::after {
     content: "";
-    background: url(../../img/icon_gift.svg);
+    background: url(../img/icon_gift.svg) center;
     width: 80px;
     height: 80px;
     position: absolute;
     top: 59px;
-    left: 36%;
+    left: 50%;
   }
+
+  @media (min-width: @tablet-width) {
+    padding: 71px 125px 69px 422px;
+  }
+
+  &::after {
+    top: 57px;
+    left: 11%;
+  }
+
+}
+
+.gift__link {
+  text-decoration: none;
 }
 
 .gift__text {
@@ -38,5 +56,9 @@
   text-align: center;
   color: #ffffff;
   position: relative;
-  z-index: 10;
+  z-index: 10; 
+  
+  @media (min-width: @tablet-width){
+    text-align: left;
+  }
 }
