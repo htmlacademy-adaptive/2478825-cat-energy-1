@@ -1,5 +1,9 @@
 .addition {
   padding: 20px 0 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 39px 0 0;
+  }
 }
 
 .addition__header {
@@ -27,6 +31,11 @@
   @media (min-width: @tablet-width) {
     padding: 26px 38px 28px;
   }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    padding: 20px 0 9px;
+  }
 }
 
 .addition__item:first-child {
@@ -34,11 +43,15 @@
 }
 
 .addition__wrapper {
-  
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-right: 40px;
   }
 }
 
@@ -57,17 +70,28 @@
     line-height: 20px;
     margin: 0;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 327px;
+  }
 }
 
 .addition__goods {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content:right;
+  justify-content: space-between;
   column-gap: 50px;
   margin-bottom: 15px;
 
-  @media (min-width: @tablet-width) {}
+  @media (min-width: @tablet-width) {
+    justify-content: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 285px;
+  }
 }
 
 .addition__name {
@@ -116,5 +140,21 @@
   @media (min-width: @tablet-width) {
     border: 1px solid #cdcdcd;
     margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+    border: none;
+    margin: 0;
+  }
+}
+
+.addition__wrap {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin: 0 auto;
+    width: 1220px;
+    justify-content: space-between;
+    padding-bottom: 87px;
   }
 }

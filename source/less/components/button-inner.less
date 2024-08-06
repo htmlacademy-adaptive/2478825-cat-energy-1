@@ -1,25 +1,32 @@
 .button-inner {
-    font-family: @oswald;
-    font-size: 16px;
+  font-family: @oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 10px;
+  width: 100%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
     font-weight: 400;
-    line-height: 20px;
-    background: #68b738;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 10px;
-    width: 100%;
-    cursor: pointer;
+    line-height: 26px;
+    padding: 14px 14px;
+  }
 
-    @media (min-width: @tablet-width) {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 26px;
-        padding: 14px 14px;
-    }
-
-    @media (min-width: @desktop-width) {
-        width: 570px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
+.button-inner:hover {
+  background: #5eaa2f;
+}
+
+.button-inner:active {
+  color: rgba(255, 255, 255, 0.30);
+}

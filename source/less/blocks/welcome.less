@@ -12,9 +12,15 @@
       width: 709px;
       height: 609px;
       position: absolute;
-      background: url(../img/main-img-tablet.png) no-repeat 0 0;
+      background-image: image-set(url("../img/main-img-tablet.webp"), url("../img/main-img-tablet.png"));
+      background-repeat: no-repeat;
       top: 256px;
       left: 30px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: image-set(url("../img/main-img-tablet@2x.webp"), url("../img/main-img-tablet@2x.png"));
+        background-size: 709px 609px;
+      }
     }
   }
 
@@ -38,11 +44,18 @@
       position: absolute;
       width: 50%;
       height: 694px;
-      background: #504f55 url("../img/welcome-cat-desktop.jpg") no-repeat top 0 right 0;
+      // background: #504f55 url("../img/welcome-cat-desktop.jpg") no-repeat top 0 right 0;
+      background-color: #504f55;
+      background-image: image-set(url("../img/welcome-cat-desktop.webp"), url("../img/welcome-cat-desktop.png"));
+      background-repeat: no-repeat;
       top: -101px;
       left: 50%;
       right: 0;
       z-index: 4;
+
+      @media (min-resolution: 2dppx) {
+        background-image: image-set(url("../img/welcome-cat-desktop@2x.webp"), url("../img/welcome-cat-desktop@2x.png"));
+      }
     }
 
   }
@@ -62,9 +75,16 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../img/main-img.png") no-repeat 0 0;
+    background-image: image-set(url("../img/main-img.webp"), url("../img/main-img.png"));
+    background-repeat: no-repeat;
     z-index: 10;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../img/main-img@2x.webp"), url("../img/main-img@2x.png"));
+      background-size: 280px 270px;
+    }
   }
+
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -85,19 +105,27 @@
       width: 552px;
       height: 499px;
       position: absolute;
-      background: url(../img/main-img-desktop.png) no-repeat;
+      background-image: image-set(url("../img/main-img-desktop.webp"), url("../img/main-img-desktop.png"));
+      background-repeat: no-repeat;
       top: 42px;
       left: calc(50% + 112px);
       z-index: 11;
+
+      @media (min-resolution: 2dppx) {
+        background-image: image-set(url("../img/main-img-desktop@2x.webp"), url("../img/main-img-desktop@2x.png"));
+      }
     }
   }
-
 }
 
 .welcome__container {
-  background: #504f55 url("../img/welcome-cat.jpg") no-repeat top center;
+  background-image: #504f55 image-set(url("../img/welcome-cat.jpg"), url("../../img/welcome-cat.webp")) no-repeat top center;
   background-size: auto 100%;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(url("../img/welcome-cat@2x.jpg"), url("../../img/welcome-cat@2x.webp"));
+  }
 
   &::before {
     content: "";
@@ -218,4 +246,13 @@
     margin-right: calc(100% - 80px);
   }
 
+}
+
+.welcome__program-selection:hover {
+  background-color: #5eaa2f;
+}
+
+.welcome__program-selection:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.30);
 }
