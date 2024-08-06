@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="body">
@@ -14,8 +14,8 @@
 
     <a class="header__logo logo">
       <picture>
-        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202px" hieght="59px">
-        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174px" hieght="50px">
+        <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202">
+        <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174">
         <img class="logo__img" src="./img/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
       </picture>
     </a>
@@ -28,9 +28,9 @@
           <a class="nav__link nav__link--form" href="index.html">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link nav__link--form" href="#">Каталог продукции</a>
+          <a class="nav__link nav__link--form" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="nav__item nav__item--active">
+        <li class="nav__item nav__item--active nav__item--active-form">
           <a class="nav__link nav__link--form" href="#">Подбор программы</a>
         </li>
       </ul>
@@ -80,25 +80,55 @@
         </fieldset>
       </div>
       <fieldset class="form__group contact-group">
-        <legend class="form__title contact-group__title">Контактные данные (владельца кота)</legend>
+        <legend class="form__title contact-group__title special-title">
+          <span class="special-title__wrapper">
+            <span class="special-title__text special-title__text--altered">
+              Контактные данные (владельца кота)
+            </span>
+          </span>
+        </legend>
         <ul class="form__list contact-group__list">
-          <li class="contact-group__item contact-input">
-            <lable for="email" class="contact-input__lable">E-mail:*</lable>
-            <input type="email" id="email" class="contact-input__input" value="kuklachev@gmail.com">
+          <li class="contact-group__item text-input">
+            <lable for="email" class="text-input__label">E-mail:*</lable>
+            <input type="email" id="email" class="text-input__input" value="kuklachev@gmail.com">
+            <svg class="text-input__svg" width="18" height="14" viewBox="0 0 18 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.500336 5.5V13.5H17.5041V5.5M0.500336 0.5H17.5041V2.5L9.00223 8.5L0.500336 2.5V0.5Z"
+                stroke="current Color" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </li>
-          <li class="contact-group__item contact-input">
-            <lable for="telephone" class="contact-input__lable">Телефон:*</lable>
-            <input type="tel" id="telephone" class="contact-input__input" value="8 (960) 900-60-90">
+          <li class="contact-group__item text-input">
+            <lable for="telephone" class="text-input__label">Телефон:*</lable>
+            <input type="tel" id="telephone" class="text-input__input" value="8 (960) 900-60-90">
+            <svg class="text-input__svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.00224 8H15.5041M15.5041 8L13.0036 5.5M15.5041 8L13.0036 10.5M5.50191 0.5V5.5H2.50124V10.5H5.50191V15.5H3.00135C1.50102 15.5 0.500793 14.5 0.500793 13V3C0.500793 1.5 1.50102 0.5 3.00135 0.5H5.50191Z"
+                stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__group comment">
-        <legend class="form__title comment__title">Комментарий</legend>
-        <!-- <input type="text" class="comment__input text-input__input" value="Расскажите обо всех повадках кота"> -->
-        <textarea class="comment__textarea text-input__input">Расскажите обо всех повадках кота</textarea>
+        <legend class="form__title comment__title special-title">
+          <span class="special-title__wrapper">
+            <span class="special-title__text">
+              Комментарий
+            </span>
+          </span>
+        </legend>
+        <div class="comment__wrapper">
+          <textarea class="comment__textarea">Расскажите обо всех повадках кота</textarea>
+        </div>
       </fieldset>
       <fieldset class="form__group extra-group">
-        <legend class="form__title extra-group__title">Дополнительно</legend>
+        <legend class="form__title extra-group__title special-title">
+          <span class="special-title__wrapper">
+            <span class="special-title__text">
+              Дополнительно
+            </span>
+          </span>
+        </legend>
         <ul class="form__list extra-group__list">
           <li class="extra-group__item checkbox-input">
             <input type="checkbox" class="checkbox-input__input visually-hidden" id="sweetener" name="ingredients"
@@ -122,7 +152,7 @@
       <fieldset class="form__group button-form">
         <legend class="form__title visually-hidden">Кнопка отправки</legend>
         <button class="form__button button-inner" type="submit">Отправить заявку</button>
-        <p class="button-inner__text">* — Обязательные поля</p>
+        <p class="button-form__text">* — Обязательные поля</p>
       </fieldset>
     </form>
   </main>
@@ -141,7 +171,7 @@
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
         <picture>
-          <img class="footer__map" src="./img/map.jpg" alt="Карта" width="320px" height="362px">
+          <img class="footer__map" src="./img/map.jpg" alt="Карта" width="320" height="362">
         </picture>
       </div>
     </div>

@@ -1,45 +1,32 @@
 .button-inner {
-    font-family: @oswald;
-    font-size: 16px;
+  font-family: @oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  background: #68b738;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  padding: 10px 10px;
+  width: 100%;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
     font-weight: 400;
-    line-height: 20px;
-    background: #68b738;
-    color: #ffffff;
-    text-transform: uppercase;
-    border: none;
-    padding: 10px 10px;
-    width: 100%;
-    cursor: pointer;
+    line-height: 26px;
+    padding: 14px 14px;
+  }
 
-    @media (min-width: @tablet-width) {
-        width: 284px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 26px;
-        padding: 14px 14px;
-    }
-
-    @media (min-width: @desktop-width) {
-        width: 570px;
-    }
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
-.button-inner__text {
-    margin: 0 20px 32px;
-    padding: 0;
-    font-family: @lato;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    text-align: center;
+.button-inner:hover {
+  background: #5eaa2f;
+}
 
-    @media (min-width: @tablet-width) {
-        font-size: 16px;
-        line-height: 16px;
-        margin: 17px 0 0 57px;
-    }
-
-    @media (min-width: @desktop-width) {
-        margin: 17px 0 0 79px;
-    } 
+.button-inner:active {
+  color: rgba(255, 255, 255, 0.30);
 }
