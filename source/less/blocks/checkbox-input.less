@@ -79,6 +79,10 @@
   }
 }
 
+.checkbox-input__input:checked+.checkbox-input__label::before {
+  display: block;
+}
+
 .checkbox-input__label:hover {
   @media (min-width: @tablet-width) {
     &::after {
@@ -95,7 +99,7 @@
   }
 }
 
-.checkbox-input__label:hover {
+.checkbox-input__label:disabled {
   @media (min-width: @tablet-width) {
     opacity: 0.3;
   }

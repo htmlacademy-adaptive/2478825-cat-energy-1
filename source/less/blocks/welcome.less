@@ -44,10 +44,10 @@
       position: absolute;
       width: 50%;
       height: 694px;
-      // background: #504f55 url("../img/welcome-cat-desktop.jpg") no-repeat top 0 right 0;
       background-color: #504f55;
       background-image: image-set(url("../img/welcome-cat-desktop.webp"), url("../img/welcome-cat-desktop.png"));
       background-repeat: no-repeat;
+      background-position: right;
       top: -101px;
       left: 50%;
       right: 0;
@@ -119,8 +119,11 @@
 }
 
 .welcome__container {
-  background-image: #504f55 image-set(url("../img/welcome-cat.jpg"), url("../../img/welcome-cat.webp")) no-repeat top center;
+  background-image: image-set(url("../img/welcome-cat.jpg"), url("../../img/welcome-cat.webp"));
   background-size: auto 100%;
+  background-color: #504f55;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: relative;
 
   @media (min-resolution: 2dppx) {
