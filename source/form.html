@@ -49,15 +49,15 @@
           <ul class="form__list name-group__list">
             <li class="name-group__item text-input">
               <label for="name" class="text-input__label">ИМЯ:*</label>
-              <input type="text" id="name" class="text-input__input" value="барсик">
+              <input type="text" name="name" id="name" class="text-input__input" value="барсик">
             </li>
             <li class="name-group__item text-input">
               <label for="weight" class="text-input__label">Вес (кг):*</label>
-              <input type="text" id="weight" class="text-input__input" value="7">
+              <input type="text" name="weight" id="weight" class="text-input__input" value="7">
             </li>
             <li class="name-group__item text-input">
               <label for="age" class="text-input__label">Возраст (лет):</label>
-              <input type="text" id="age" class="text-input__input" value="7">
+              <input type="text" name="age" id="age" class="text-input__input" value="7">
             </li>
           </ul>
         </fieldset>
@@ -65,15 +65,15 @@
           <legend class="form__title visually-hidden">Подобрать программу</legend>
           <ul class="form__list programm-group__list">
             <li class="programm-group__item radio-input">
-              <input type="radio" class="radio-input__input visually-hidden" name="programm" id="slimming" checked>
+              <input type="radio" class="radio-input__input visually-hidden" name="programm" value="slimming" id="slimming" checked>
               <label for="slimming" class=" radio-input__label">Похудение</label>
             </li>
             <li class="programm-group__item radio-input">
-              <input type="radio" class="radio-input__input visually-hidden" name="programm" id="weight-gain">
+              <input type="radio" class="radio-input__input visually-hidden" name="programm" value="weight-gain" id="weight-gain">
               <label for="weight-gain" class="radio-input__label">Набор массы</label>
             </li>
             <li class="programm-group__item radio-input">
-              <input type="radio" class="radio-input__input visually-hidden" name="programm" id="know">
+              <input type="radio" class="radio-input__input visually-hidden" name="programm" value="advise" id="know">
               <label for="know" class="radio-input__label">Не знаю (Нужен ваш совет)</label>
             </li>
           </ul>
@@ -90,7 +90,7 @@
         <ul class="form__list contact-group__list">
           <li class="contact-group__item text-input">
             <lable for="email" class="text-input__label">E-mail:*</lable>
-            <input type="email" id="email" class="text-input__input" value="kuklachev@gmail.com">
+            <input type="email" name="email" id="email" class="text-input__input" value="kuklachev@gmail.com">
             <svg class="text-input__svg" width="18" height="14" viewBox="0 0 18 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#email"></use>
@@ -98,7 +98,7 @@
           </li>
           <li class="contact-group__item text-input">
             <lable for="telephone" class="text-input__label">Телефон:*</lable>
-            <input type="tel" id="telephone" class="text-input__input" value="8 (960) 900-60-90">
+            <input type="tel" name="telephone" id="telephone" class="text-input__input" value="8 (960) 900-60-90">
             <svg class="text-input__svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <use href="./img/sprite.svg#telephon"></use>
@@ -128,20 +128,20 @@
         </legend>
         <ul class="form__list extra-group__list">
           <li class="extra-group__item checkbox-input">
-            <input type="checkbox" class="checkbox-input__input visually-hidden" id="sweetener" name="ingredients"
+            <input type="checkbox" class="checkbox-input__input visually-hidden" id="sweetener" value="sweetener" name="ingredients"
               checked>
             <label for="sweetener" class="checkbox-input__label">сахарозаменитель</label>
           </li>
           <li class="extra-group__item checkbox-input">
-            <input type="checkbox" class="checkbox-input__input visually-hidden" id="water" name="ingredients">
+            <input type="checkbox" class="checkbox-input__input visually-hidden" id="water" value="water" name="ingredients">
             <label for="water" class="checkbox-input__label">питьевая вода</label>
           </li>
           <li class="extra-group__item checkbox-input">
-            <input type="checkbox" class="checkbox-input__input visually-hidden" id="milk" name="ingredients">
+            <input type="checkbox" class="checkbox-input__input visually-hidden" id="milk" value="milk" name="ingredients">
             <label for="milk" class="checkbox-input__label">молоко</label>
           </li>
           <li class="extra-group__item checkbox-input">
-            <input type="checkbox" class="checkbox-input__input visually-hidden" id="vitamins" name="ingredients">
+            <input type="checkbox" class="checkbox-input__input visually-hidden" id="vitamins" value="vitamins" name="ingredients">
             <label for="vitamins" class="checkbox-input__label">витамины</label>
           </li>
         </ul>
@@ -173,9 +173,9 @@
       </div>
     </div>
     <div class="footer__wrapper">
-      <div class="footer__logo logo">
-        <a class="logo__link" href="#">
-          <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <div class="footer__logotip logotip">
+        <a class="logotip__link" href="#">
+          <svg class="logotip__img" width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_124433_322)">
               <path
                 d="M1.6236 21.9574C0.489608 20.2815 -0.0733133 18.2722 0.0213584 16.2383V7.7617C-0.115966 5.70593 0.411707 3.66097 1.52346 1.94043C2.62499 0.612766 4.32737 0 6.83086 0C9.33436 0 10.9366 0.612766 11.938 1.73617C13.0252 3.15904 13.56 4.9407 13.4401 6.74043V8.78298H8.53324V6.43404C8.57287 5.73932 8.47057 5.04378 8.23282 4.39149C8.10574 4.12819 7.90433 3.90969 7.65449 3.76409C7.40465 3.61849 7.11781 3.55245 6.83086 3.57447C6.12989 3.57447 5.62919 3.77872 5.42891 4.28936C5.20237 5.015 5.10073 5.77516 5.12849 6.53617V17.4638C5.0756 18.2022 5.21373 18.9417 5.52905 19.6085C5.72933 20.1192 6.23003 20.3234 6.931 20.3234C7.63198 20.3234 8.03254 20.1192 8.23282 19.6085C8.4605 18.9183 8.56232 18.1914 8.53324 17.4638V15.0128H13.4401V17.0553C13.5419 18.8844 13.0103 20.6918 11.938 22.1617C10.9366 23.3872 9.23422 24 6.83086 24C4.42751 23.8979 2.62499 23.2851 1.6236 21.9574Z"
@@ -231,7 +231,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="#" aria-label="Наш телеграмм">
-              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="25" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use href="./img/sprite.svg#telegramm"></use>
               </svg>
             </a>

@@ -3,7 +3,7 @@
   z-index: 3;
 
   @media (min-width: @tablet-width) {
-    margin: 16px 34px 0 0;
+    margin: 16px 31px 0 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -13,7 +13,7 @@
 
 .nav__toggle {
   position: absolute;
-  right: 20px;
+  right: 22px;
   top: -45px;
   width: 24px;
   height: 24px;
@@ -22,6 +22,19 @@
   cursor: pointer;
   border: none;
   display: none;
+}
+
+.nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.nav__toggle:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.nav__toggle:active {
+  opacity: 0.3;
 }
 
 .nav--closed .nav__toggle {
@@ -81,16 +94,21 @@
   @media (min-width: @desktop-width) {}
 }
 
-.nav__item:hover {
-
+.nav__link:hover {
+  opacity: 0.6;
 }
 
-.nav__item:active {
-
+.nav__link:active {
+  opacity: 1.0;
 }
 
-.nav__item:disabled {
+.nav__link:focus {
+  outline: none;
+  opacity: 0.6;
+}
 
+.nav__link:disabled {
+  opacity: 0.3;
 }
 
 .nav__item--active {

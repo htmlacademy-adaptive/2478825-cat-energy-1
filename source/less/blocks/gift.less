@@ -2,7 +2,7 @@
   margin: 35px 20px 36px;
 
   @media (min-width: @tablet-width) {
-    margin: 66px 31px 74px;
+    margin: 66px 31px 76px;
   }
 
   @media (min-width: @desktop-width) {
@@ -53,10 +53,9 @@
     }
   }
 
-
   &::after {
     top: 57px;
-    left: 50%;
+    left: 17%;
   }
 
   @media (min-width: @desktop-width) {
@@ -67,11 +66,29 @@
     @media (min-resolution: 2dppx) {
       background-image: image-set(url("../img/gift@2x.webp"), url("../img/gift@2x.png"));
     }
+
+    &::after {
+      top: 57px;
+      left: 50%;
+    }
   }
 }
 
 .gift__link {
   text-decoration: none;
+}
+
+.gift__link:hover {
+  opacity: 0.8;
+}
+
+.gift__link:active {
+  opacity: 0.6;
+}
+
+.gift__link:focus {
+  outline: none;
+  opacity: 0.8;
 }
 
 .gift__text {
