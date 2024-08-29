@@ -7,6 +7,13 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" sizes="16x16" href="./img/favicons/16.png" type="image/x-icon">
+  <link rel="icon" sizes="32x32" href="./img/favicons/32.png" type="image/x-icon">
+  <link rel="icon" sizes="152x152" href="./img/favicons/152.png" type="image/x-icon">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="body">
@@ -89,7 +96,7 @@
         </legend>
         <ul class="form__list contact-group__list">
           <li class="contact-group__item text-input">
-            <lable for="email" class="text-input__label">E-mail:*</lable>
+            <label for="email" class="text-input__label">E-mail:*</label>
             <input type="email" name="email" id="email" class="text-input__input" value="kuklachev@gmail.com">
             <svg class="text-input__svg" width="18" height="14" viewBox="0 0 18 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +104,7 @@
             </svg>
           </li>
           <li class="contact-group__item text-input">
-            <lable for="telephone" class="text-input__label">Телефон:*</lable>
+            <label for="telephone" class="text-input__label">Телефон:*</label>
             <input type="tel" name="telephone" id="telephone" class="text-input__input" value="8 (960) 900-60-90">
             <svg class="text-input__svg" width="16" height="16" viewBox="0 0 16 16" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -115,7 +122,7 @@
           </span>
         </legend>
         <div class="comment__wrapper">
-          <textarea class="comment__textarea">Расскажите обо всех повадках кота</textarea>
+          <textarea class="comment__textarea" name="comment">Расскажите обо всех повадках кота</textarea>
         </div>
       </fieldset>
       <fieldset class="form__group extra-group">

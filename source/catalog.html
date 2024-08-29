@@ -7,12 +7,19 @@
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" sizes="16x16" href="./img/favicons/16.png" type="image/x-icon">
+  <link rel="icon" sizes="32x32" href="./img/favicons/32.png" type="image/x-icon">
+  <link rel="icon" sizes="152x152" href="./img/favicons/152.png" type="image/x-icon">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="body">
   <header class="header">
 
-    <a class="header__logo logo">
+    <a href="./index.html" class="header__logo logo">
       <picture>
         <source srcset="./img/logo-desktop.svg" media="(min-width: 1440px)" width="202">
         <source srcset="./img/logo-tablet.svg" media="(min-width: 768px)" width="174">
@@ -37,11 +44,11 @@
     </nav>
   </header>
   <main class="page-catalog">
-    <section class="calalog">
+    <section class="catalog">
       <h1 class="catalog__title inner-title">Каталог продукции</h1>
       <ul class="catalog__list">
         <li class="catalog__item card">
-          <div class="catalog__wrapper">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-1.webp 1x, ./img/card-desktop-1@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-1.webp 1x, ./img/card-tablet-1@2x.webp 2x">
@@ -73,8 +80,8 @@
           </div>
           <button class="card__button button-inner" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrapper">
+        <li class="catalog__item card">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-2.webp 1x, ./img/card-desktop-2@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-2.webp 1x, ./img/card-tablet-2@2x.webp 2x">
@@ -106,8 +113,8 @@
           </div>
           <button class="card__button button-inner" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrapper">
+        <li class="catalog__item card">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-3.webp 1x, ./img/card-desktop-3@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-3.webp 1x, ./img/card-tablet-3@2x.webp 2x">
@@ -139,8 +146,8 @@
           </div>
           <button class="card__button button-inner" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrapper">
+        <li class="catalog__item card">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-4.webp 1x, ./img/card-desktop-4@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-4.webp 1x, ./img/card-tablet-4@2x.webp 2x">
@@ -172,8 +179,8 @@
           </div>
           <button class="card__button button-inner" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrapper">
+        <li class="catalog__item card">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-5.webp 1x, ./img/card-desktop-5@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-5.webp 1x, ./img/card-tablet-5@2x.webp 2x">
@@ -205,8 +212,8 @@
           </div>
           <button class="card__button button-inner" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrapper">
+        <li class="catalog__item card">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-6.webp 1x, ./img/card-desktop-6@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-6.webp 1x, ./img/card-tablet-6@2x.webp 2x">
@@ -238,8 +245,8 @@
           </div>
           <button class="card__button button-inner" type="button">Заказать</button>
         </li>
-        <li class="catalog__item">
-          <div class="catalog__wrapper">
+        <li class="catalog__item card">
+          <div class="card__container">
             <picture>
               <source type="image/webp" media="(min-width: 1440px)" srcset="./img/card-desktop-7.webp 1x, ./img/card-desktop-7@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="./img/card-tablet-7.webp 1x, ./img/card-tablet-7@2x.webp 2x">

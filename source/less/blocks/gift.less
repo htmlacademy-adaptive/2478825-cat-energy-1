@@ -2,7 +2,7 @@
   margin: 35px 20px 36px;
 
   @media (min-width: @tablet-width) {
-    margin: 66px 31px 76px;
+    margin: 70px 31px 74px;
   }
 
   @media (min-width: @desktop-width) {
@@ -26,7 +26,7 @@
 
   &::before {
     content: "";
-    background: url(../img/gift-background.svg) repeat;
+    background: url("../img/gift-background.svg") repeat;
     position: absolute;
     top: 0;
     left: 0;
@@ -36,10 +36,11 @@
 
   &::after {
     content: "";
-    background: url(../img/icon_gift.svg) center;
+    background: url("../img/icon_gift.svg") center;
     width: 80px;
     height: 80px;
     position: absolute;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -51,11 +52,11 @@
     @media (min-resolution: 2dppx) {
       background-image: image-set(url("../img/gift-tablet@2x.webp"), url("../img/gift-tablet@2x.png"));
     }
-  }
 
-  &::after {
-    top: 57px;
-    left: 17%;
+    &::after {
+      top: 57px;
+      left: 17%;
+    }
   }
 
   @media (min-width: @desktop-width) {
