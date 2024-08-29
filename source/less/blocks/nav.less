@@ -13,7 +13,7 @@
 
 .nav__toggle {
   position: absolute;
-  right: 20px;
+  right: 22px;
   top: -45px;
   width: 24px;
   height: 24px;
@@ -21,7 +21,19 @@
   background-image: url("../img/mobile-menu.svg");
   cursor: pointer;
   border: none;
-  display: none;
+}
+
+.nav__toggle:hover {
+  opacity: 0.6;
+}
+
+.nav__toggle:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.nav__toggle:active {
+  opacity: 0.3;
 }
 
 .nav--closed .nav__toggle {
@@ -77,20 +89,23 @@
   @media (min-width: @tablet-width) {
     border-bottom: none;
   }
-
-  @media (min-width: @desktop-width) {}
 }
 
-.nav__item:hover {
-
+.nav__link:hover {
+  opacity: 0.6;
 }
 
-.nav__item:active {
-
+.nav__link:active {
+  opacity: 1;
 }
 
-.nav__item:disabled {
+.nav__link:focus {
+  outline: none;
+  opacity: 0.6;
+}
 
+.nav__link:disabled {
+  opacity: 0.3;
 }
 
 .nav__item--active {
@@ -138,7 +153,6 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-
   }
 }
 
@@ -149,7 +163,16 @@
 .nav__item--active-form {
   @media (min-width: @desktop-width) {
     &::before {
-      border-bottom: 2px solid #000000;
+      border-bottom: 2px solid #68b738;
+      bottom: -9px;
+    }
+  }
+}
+
+.nav__item--active-catalog {
+  @media (min-width: @desktop-width) {
+    &::before {
+      border-bottom: 2px solid #68b738;
       bottom: -9px;
     }
   }

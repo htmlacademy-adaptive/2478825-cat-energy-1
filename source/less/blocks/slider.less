@@ -85,8 +85,6 @@
   width: 0;
 }
 
-.slider__image {}
-
 .slider__handle {
   width: 40px;
   height: 40px;
@@ -176,7 +174,7 @@
 }
 
 .slider__arrow:hover {
-fill: #68b738;
+  fill: #68b738;
 }
 
 .slider__handle:active {
@@ -203,6 +201,10 @@ fill: #68b738;
   }
 }
 
+.slider__handle:hover + b.slider__arrow {
+  color: #68b738;
+}
+
 .slider__arrow:active {
   fill: #5eaa2f;
-  }
+}

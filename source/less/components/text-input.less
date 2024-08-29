@@ -42,22 +42,15 @@
 }
 
 .text-input__input:hover {
-  @media (min-width: @tablet-width) {
-    border: 1px solid #cdcdcd;
-  }
+  outline: 1px solid #cdcdcd;
 }
 
 .text-input__input:focus {
-  @media (min-width: @tablet-width) {
-    border: 2px solid #444444;
-    outline: none;
-  }
+  outline: 2px solid #444444;
 }
 
 .text-input__input:invalid {
-  @media (min-width: @tablet-width) {
-    border: 2px solid #ff8282;
-  }
+  outline: 2px solid #ff8282;
 }
 
 .text-input__svg {
@@ -76,9 +69,14 @@
   }
 }
 
-.text-input__svg:focus {
-  @media (min-width: @tablet-width) {
-    outline: none;
-    stroke: #68b738;
-  }
+.text-input__input:hover + .text-input__svg {
+  color: #222222;
+}
+
+.text-input__input:focus + .text-input__svg {
+  color: #68b738;
+}
+
+.text-input__input:invalid + .text-input__svg {
+  color: #ff8282;
 }

@@ -69,7 +69,7 @@
   }
 }
 
-.radio-input__input:checked+.radio-input__label::before {
+.radio-input__input:checked + .radio-input__label::before {
   display: block;
 }
 
@@ -92,4 +92,8 @@
   @media (min-width: @tablet-width) {
     opacity: 0.3;
   }
+}
+
+.radio-input__input:focus + .radio-input__label::after {
+  border-color: #000000;
 }

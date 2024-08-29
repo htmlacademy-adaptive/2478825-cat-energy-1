@@ -39,6 +39,7 @@
       top: 77px;
       left: 130px;
     }
+
     &::before {
       content: "";
       width: 60px;
@@ -52,6 +53,14 @@
   @media (min-width: @desktop-width) {
     margin-top: 82px;
     width: 245px;
+
+    &::after {
+      left: 92px;
+    }
+
+    &::before {
+      left: 92px;
+    }
   }
 }
 
@@ -72,7 +81,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding: 146px 19px 27px;
+    padding: 146px 5px 27px;
   }
 }
 
@@ -118,5 +127,10 @@
 }
 
 .products__button:active {
+  background-color: #ebebeb;
+}
+
+.products__button:focus {
+  outline: none;
   background-color: #ebebeb;
 }

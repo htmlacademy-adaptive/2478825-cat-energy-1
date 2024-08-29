@@ -79,13 +79,15 @@
   }
 }
 
+.checkbox-input__input:checked + .checkbox-input__label::before {
+  display: block;
+}
+
 .checkbox-input__label:hover {
   @media (min-width: @tablet-width) {
     &::after {
       content: "";
       position: absolute;
-      width: 27px;
-      height: 27px;
       border: 1px solid #bababa;
       width: 40px;
       height: 40px;
@@ -95,8 +97,26 @@
   }
 }
 
-.checkbox-input__label:hover {
+.checkbox-input__label:focus {
+  @media (min-width: @tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      border: 1px solid #bababa;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.checkbox-input__label:disabled {
   @media (min-width: @tablet-width) {
     opacity: 0.3;
   }
+}
+
+.checkbox-input__input:focus + .checkbox-input__label::after {
+  border-color: #000000;
 }

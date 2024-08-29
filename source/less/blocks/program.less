@@ -54,7 +54,6 @@
   text-transform: uppercase;
   padding: 30px 0 28px 90px;
 
-
   @media (min-width: @tablet-width) {
     .mixin();
     font-size: 36px;
@@ -145,7 +144,6 @@
   padding: 19px 50px 22px 20px;
   position: relative;
   display: inline-block;
-
 
   &::before {
     content: "";
@@ -242,6 +240,11 @@
       background: url("../img/icon-arrow.svg") no-repeat;
     }
   }
+}
+
+.program__search:focus {
+  outline: none;
+  opacity: 0.6;
 }
 
 .program__search:active {

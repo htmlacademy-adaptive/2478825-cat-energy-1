@@ -35,7 +35,6 @@
       min-height: 695px;
       position: absolute;
       top: -101px;
-      left: 50%;
       z-index: 5;
     }
 
@@ -44,10 +43,10 @@
       position: absolute;
       width: 50%;
       height: 694px;
-      // background: #504f55 url("../img/welcome-cat-desktop.jpg") no-repeat top 0 right 0;
       background-color: #504f55;
       background-image: image-set(url("../img/welcome-cat-desktop.webp"), url("../img/welcome-cat-desktop.png"));
       background-repeat: no-repeat;
+      background-position: right;
       top: -101px;
       left: 50%;
       right: 0;
@@ -57,11 +56,8 @@
         background-image: image-set(url("../img/welcome-cat-desktop@2x.webp"), url("../img/welcome-cat-desktop@2x.png"));
       }
     }
-
   }
 }
-
-.welcome__wrap {}
 
 .welcome__wrapper {
   padding-bottom: 135px;
@@ -84,7 +80,6 @@
       background-size: 280px 270px;
     }
   }
-
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -119,8 +114,11 @@
 }
 
 .welcome__container {
-  background-image: #504f55 image-set(url("../img/welcome-cat.jpg"), url("../../img/welcome-cat.webp")) no-repeat top center;
+  background-image: image-set(url("../img/welcome-cat.jpg"), url("../../img/welcome-cat.webp"));
   background-size: auto 100%;
+  background-color: #504f55;
+  background-position: top center;
+  background-repeat: no-repeat;
   position: relative;
 
   @media (min-resolution: 2dppx) {
@@ -141,7 +139,7 @@
   @media (min-width: @tablet-width) {
     background: none;
     background-color: #ffffff;
-    padding: 28px 99px 0;
+    padding: 28px 100px 0;
 
     &::before {
       background: none;
@@ -245,14 +243,18 @@
     margin: 0;
     margin-right: calc(100% - 80px);
   }
-
 }
 
 .welcome__program-selection:hover {
   background-color: #5eaa2f;
 }
 
+.welcome__program-selection:focus {
+  outline: none;
+  background-color: #5eaa2f;
+}
+
 .welcome__program-selection:active {
   background-color: #5eaa2f;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }

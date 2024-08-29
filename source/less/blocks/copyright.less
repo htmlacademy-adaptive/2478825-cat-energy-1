@@ -1,10 +1,14 @@
 .copyright__wrapper {
   display: flex;
   justify-content: space-between;
+  min-width: 280px;
+
   @media (min-width: @tablet-width) {
-    width: 162px;
+    margin-left: 4px;
+    min-width: 160px;
   }
 }
+
 .copyright__text {
   font-family: @lato;
   font-size: 16px;
@@ -23,6 +27,18 @@
   display: block;
   color: #444444;
   text-decoration: none;
-  width: 27px;
-  height: 34px;
+}
+
+.copyright__link:hover {
+  color: #68b738;
+}
+
+.copyright__link:focus {
+  outline: none;
+  color: #68b738;
+}
+
+.copyright__link:active {
+  color: #68b738;
+  opacity: 0.3;
 }
