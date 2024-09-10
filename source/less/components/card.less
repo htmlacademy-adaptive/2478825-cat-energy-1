@@ -117,6 +117,9 @@
 }
 
 .card__button {
+  text-decoration: none;
+  display: block;
+
   @media (min-width: @tablet-width) {
     width: 250px;
     font-size: 16px;
@@ -129,4 +132,23 @@
   @media (min-width: @desktop-width) {
     width: 169px;
   }
+}
+
+.card__link-product:hover {
+  opacity: 0.6;
+  z-index: 5;
+  position: relative;
+}
+
+.card__link-product:focus {
+  outline: none;
+  opacity: 0.6;
+  z-index: 5;
+  position: relative;
+}
+
+.card__link-product:active {
+  opacity: 0.3;
+  z-index: 5;
+  position: relative;
 }
